@@ -331,25 +331,50 @@ h4{
 .boton-dorado {
     background: linear-gradient(
         135deg,
-        #f9e076 0%,
-        #f5c542 25%,
-        #d4af37 50%,
-        #f5c542 75%,
-        #fff2a8 100%
+        #7a5c1b 0%,
+        #c9a227 15%,
+        #fff1a8 30%,
+        #d4af37 45%,
+        #a67c00 55%,
+        #f5e27a 70%,
+        #b08d26 85%,
+        #7a5c1b 100%
     );
 
-    color: #6b4f1d; /* texto oscuro elegante */
-    padding: 18px 30px;
-    border-radius: 16px; /* bordes redondeados */
-    text-align: center;
-    font-weight: bold;
+    color: #3b2a0a;
+    padding: 20px 32px;
+    border-radius: 18px;
     font-size: 18px;
-    font-family: 'Georgia', serif;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+    border: 1px solid #8f6b1f;
 
     box-shadow:
-        inset 0 2px 4px rgba(255,255,255,0.6), /* brillo interno */
-        inset 0 -3px 6px rgba(0,0,0,0.2),     /* sombra interna */
-        0 6px 12px rgba(0,0,0,0.25);          /* sombra exterior */
+        inset 0 2px 3px rgba(255,255,255,0.8), /* brillo superior */
+        inset 0 -4px 6px rgba(0,0,0,0.45),    /* sombra inferior */
+        0 6px 14px rgba(0,0,0,0.35);
+}
 
-    border: 1px solid #c9a227;
+.boton-dorado {
+    position: relative;
+    overflow: hidden;
+}
+
+.boton-dorado::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        120deg,
+        transparent 30%,
+        rgba(255,255,255,0.45) 45%,
+        transparent 60%
+    );
+    transform: rotate(25deg);
+    pointer-events: none;
 }
