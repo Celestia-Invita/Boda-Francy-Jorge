@@ -357,24 +357,3 @@ h4{
         0 6px 14px rgba(0,0,0,0.35);
 }
 
-.boton-dorado {
-    position: relative;
-    overflow: hidden;
-}
-
-.boton-dorado::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        120deg,
-        transparent 30%,
-        rgba(255,255,255,0.45) 45%,
-        transparent 60%
-    );
-    transform: rotate(25deg);
-    pointer-events: none;
-}
