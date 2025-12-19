@@ -126,5 +126,32 @@
             duration: 2000
         });
       </script>
+
+<script>
+const track = document.querySelector('.slider-track');
+const slides = document.querySelectorAll('.slide');
+
+function actualizarSlideCentral() {
+  const trackRect = track.getBoundingClientRect();
+  const centroTrack = trackRect.left + trackRect.width / 2;
+
+  slides.forEach(slide => {
+    const rect = slide.getBoundingClientRect();
+    const centroSlide = rect.left + rect.width / 2;
+
+    const distancia = Math.abs(centroTrack - centroSlide);
+
+    if (distancia < rect.width / 2) {
+      slide.classList.add('activa');
+    } else {
+      slide.classList.remove('activa');
+    }
+  });
+}
+
+track.addEventListener('scroll', actualizarSlideCentral);
+window.addEventListener('load', actualizarSlideCentral);
+</script>
+
 </body>
 </html>
