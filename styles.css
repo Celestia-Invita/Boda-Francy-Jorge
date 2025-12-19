@@ -285,7 +285,7 @@ h4{
 
 .slider-track {
   display: flex;
-  gap: 0.1cm; /*Estaba en 14px*/
+  gap: 1px; /*Estaba en 14px, con 1px o 0,1cm se logra un poco más juntas*/
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
