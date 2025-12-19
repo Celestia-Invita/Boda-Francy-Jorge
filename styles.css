@@ -122,12 +122,10 @@ h1{
     
 }
 
-
-
 .entimes{
     font-family:'Times New Roman', Times, serif ;
     font-style:normal;
-    font-size:35px;
+    font-size:40px;
     font-weight:lighter;
     text-align: center;
     width: auto;
@@ -208,6 +206,7 @@ h3{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
+    
 
     color: #3b2a0a;
 
