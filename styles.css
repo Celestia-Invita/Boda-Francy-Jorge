@@ -306,14 +306,25 @@ h4{
 
 .slide img {
   width: 100%;
-  height: 68vh; /* 🔑 más grandes, tipo portada */
-  max-height: 520px;
+  height: auto;          /* 🔑 deja la proporción original */
+  max-height: 70vh;
 
-  object-fit: cover;
+  object-fit: contain;   /* 🔑 NO recorta */
+  background: #fff;
+
   border-radius: 20px;
-
   box-shadow: 0 10px 28px rgba(0,0,0,0.3);
 }
+
+.slide {
+  background: linear-gradient(
+    to bottom,
+    #f7f7f7,
+    #ffffff
+  );
+  border-radius: 22px;
+}
+
 
 /*Un extra "" */
 .slide {
