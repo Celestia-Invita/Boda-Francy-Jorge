@@ -12,7 +12,7 @@ body{
     background-attachment: fixed;
     background-position:top;
     background-size:cover;
-    color: #f12020;
+    color: #3b0a0a;
     }
 
 .caja-video{
@@ -285,7 +285,7 @@ h4{
 
 .slider-track {
   display: flex;
-  gap: 4px; /*Estaba en 14px*/
+  gap: 2%; /*Estaba en 14px*/
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
